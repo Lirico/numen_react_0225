@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 
 
-
-
-
 const Reloj = () => {
     const [hora, setHora] = useState(new Date().toLocaleTimeString())
     const [visible, setVisible] = useState(false)
@@ -29,3 +26,8 @@ const Reloj = () => {
 };
 
 export default Reloj;
+
+
+
+
+

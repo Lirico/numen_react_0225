@@ -1,16 +1,18 @@
+import Boton from "@/components/clase_2/Boton"
+import SeccionTarjetas from "@/components/clase_2/SeccionTarjetas"
+import Tarjeta from "@/components/clase_2/Tarjeta"
+import BooksContextProvider from "@/context/BooksContextProvider"
 
 
 
-
-
-
-
-const services = () => {
+const Services = () => {
   return (
     <>
-        <h1>Servicios</h1>
+        <BooksContextProvider>
+          <SeccionTarjetas />
+        </BooksContextProvider>
     </>
   )
 }
 
-export default services
+export default Services
