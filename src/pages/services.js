@@ -1,16 +1,14 @@
-import Boton from "@/components/clase_2/Boton"
-import SeccionTarjetas from "@/components/clase_2/SeccionTarjetas"
-import Tarjeta from "@/components/clase_2/Tarjeta"
-import BooksContextProvider from "@/context/BooksContextProvider"
+import CounterContextProvider from "@/context/CounterContextProvider";
+import Contador2 from "@/components/clase_5/Contador2";
 
 
 
 const Services = () => {
   return (
     <>
-        <BooksContextProvider>
-          <SeccionTarjetas />
-        </BooksContextProvider>
+      <CounterContextProvider>
+        <Contador2 />
+      </CounterContextProvider>
     </>
   )
 }
