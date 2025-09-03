@@ -16,13 +16,13 @@ const ShoppingCart = () => {
       <h3>Productos</h3>
       <div className="box grid-responsive">
         {
-            products.map(product => <Product product={product} addToCart={addToCart} />)
+            products.map(product => <Product key={product.id} product={product} addToCart={addToCart} />)
         }
       </div>
       <h3>Carrito</h3>
       <div className="box">
         {
-            cart.map(item => <CartItem item={item} deleteFromCart={deleteFromCart} />)
+            cart.map((item, i) => <CartItem key={i} item={item} deleteFromCart={deleteFromCart} />)
         }
       </div>
       <button onClick={clearCart}>Limpiar Carrito</button>
